@@ -64,12 +64,19 @@ jq \
   --arg mysql_backups_scp_key "$MYSQL_BACKUPS_SCP_KEY" \
   --arg mysql_backups_scp_destination "$MYSQL_BACKUPS_SCP_DESTINATION" \
   --arg mysql_backups_scp_cron_schedule "$MYSQL_BACKUPS_SCP_CRON_SCHEDULE" \
+  --arg blobstore_type "internal" \
+  --arg blobstore_buildpacks_bucket "" \
+  --arg blobstore_droplets_bucket "" \
+  --arg blobstore_packages_bucket "" \
+  --arg blobstore_resources_bucket "" \
+  --arg blobstore_access_key "" \
+  --arg blobstore_secret_key "" \
+  --arg blobstore_signature_version "" \
+  --arg blobstore_region "" \
+  --arg blobstore_endpoint "" \
   '
   . +
   {
-    ".properties.system_blobstore": {
-      "value": "internal"
-    },
     ".properties.logger_endpoint_port": {
       "value": $loggregator_endpoint_port
     },
@@ -131,6 +138,52 @@ jq \
       "value": $ssh_static_ips
     }
   }
+
+  +
+
+  # Blobstore
+  if $blobstore == "external" then
+    {
+      ".properties.system_blobstore": {
+        "value": "external"
+      },
+      ".properties.system_blobstore.external.buildpacks_bucket": {
+        "value": $blobstore_buildpacks_bucket
+      },
+      ".properties.system_blobstore.external.droplets_bucket": {
+        "value": $blobstore_droplets_bucket
+      },
+      ".properties.system_blobstore.external.packages_bucket": {
+        "value": $blobstore_packages_bucket
+      },
+      ".properties.system_blobstore.external.resources_bucket": {
+        "value": $blobstore_resources_bucket
+      },
+      ".properties.system_blobstore.external.access_key": {
+        "value": $blobstore_access_key
+      },
+      ".properties.system_blobstore.external.secret_key": {
+        "value": {
+          "secret": $blobstore_secret_key
+        }
+      },
+      ".properties.system_blobstore.external.signature_version.value": {
+        "value": $blobstore_signature_version
+      },
+      ".properties.system_blobstore.external.region": {
+        "value": $blobstore_region
+      },
+      ".properties.system_blobstore.external.endpoint": {
+        "value": $blobstore_endpoint
+      }
+    }
+  else
+    {
+      ".properties.system_blobstore": {
+        "value": "internal"
+      }
+    }
+  end
 
   +
 
