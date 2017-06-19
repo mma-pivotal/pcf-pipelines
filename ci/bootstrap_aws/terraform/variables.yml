@@ -1,8 +1,8 @@
-variable "aws_access_key" {
+variable "aws_access_key_id" {
   description = "AWS access key with full AWS permissions"
 }
 
-variable "aws_secret_key" {}
+variable "aws_secret_access_key" {}
 
 variable "route53_domain" {
   description = "Root domain for new hosted zone, e.g. aws.customer0.net will be used to create a some-name.aws.customer0.net hosted zone"
