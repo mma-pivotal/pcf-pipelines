@@ -93,4 +93,3 @@ output "aws_access_key_id" {
 output "aws_secret_access_key" {
   value = "${var.aws_secret_access_key}"
 }
-
