@@ -30,7 +30,6 @@ read -r -d '' director_configuration <<EOF
 {
   "ntp_servers_string": "0.amazon.pool.ntp.org,1.amazon.pool.ntp.org,2.amazon.pool.ntp.org,3.amazon.pool.ntp.org",
   "resurrector_enabled": true,
-  "max_threads": 30,
   "database_type": "external",
   "external_database_options": {
     "host": "$db_host",
