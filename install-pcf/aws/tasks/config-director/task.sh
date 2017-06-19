@@ -54,7 +54,9 @@ EOF
 resource_configuration=$(cat <<-EOF
 {
   "director": {
-    "instance_type": "c4.xlarge"
+    "instance_type": {
+      "id": "c4.xlarge"
+    }
   }
 }
 EOF
@@ -184,6 +186,7 @@ jsons=(
   "$networks_configuration"
   "$network_assignment"
   "$security_configuration"
+  "$resource_configuration"
 )
 
 for json in "${jsons[@]}"; do
