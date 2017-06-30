@@ -1,30 +1,82 @@
 # Pipeline resource configuration
-pivnet_token:             # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
+pivnet_token: n1SR6F1xDznPyrATRcwz
+            # Pivnet token for downloading resources from Pivnet. Find this token at https://network.pivotal.io/users/dashboard/edit-profile
 opsman_major_minor_version: ^1\.10\..*$ # PCF Ops Manager minor version to track
 ert_major_minor_version: ^1\.10\..*$ # PCF Elastic Runtime minor version to track
-git_private_key:
+git_private_key: |
+  -----BEGIN RSA PRIVATE KEY-----
+  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
+  aiCS4eUIMtJfphddJ+ut6GxZ7tf9qTwkx1eY9jku9A0AZadGEYS1TrL9OLEVC84F
+  BbBZ+CEzZZqc4UXdddaZswM/xttxS2mXNfRFgnbQsE/scfCtNd1zD1NljjzJeem2
+  JReqRQKCAQBUkuG1KFQ2XCqkIvaOphewCaHeFUF5et4NhJx1WrXzIdRt4zBPVbmW
+  zG6bCyIvBDU6i4PauzzpeOnB5nJAtKFNalc1iABgvqv5+psFboLVHm17SvzWoxce
+  exwKqt0KqVDXRu4daMD75Dap2ldXxu+gYXHQj7/2BGcIF4YFE/v04Gdkz33kWg0p
+  eFNboj3InHe2mO6Gv0rTLG0UKQLy8hKkQ//kfIjc3/mNknJ7b+jjXzs4SphVShDA
+  /93IB5s2FpA83QDPsApa3FIJq2tp+Dm5rE4kve3P0o5VnmzJb+Rdt9xnSO+0nypa
+  49ar1NMJZETzr2wWlh0lKp+oxd44Ugc5AoIBAQDsxadeosO4Xs7QU/JrwFuUD237
+  WQ+je6DrsGlQutKiyfApit9MUl7HTw0VNXfCztFSmRA5laiS5pZ/dkfrddUrz+2A
+  +srQ8e1Lid7iNa2WhKWvK6U32lnXv2taRN7ualvA4SOLaDkq0VClVuo55gUjzs8A
+  zADAACnN49SM5qQvjHNhNrBubXLDBkpBNL2ThH7UM8Necshv8Cbf6U4R4qPtL+AC
+  5jzi5Zun9dsYL3or5dse8ZbhkPXnZ/sRvTqYN3Qbnj2mrTIs8+57d2LiVvOZuqCF
+  vMUrfHFB62UGbOyoxLoGE22DkwlqCAWPNn/u3UBn3D7pHuhP4PLDxU5f9FXc
+  -----END RSA PRIVATE KEY-----
 
 # vCenter configuration
-vcenter_host:             # vCenter host or IP
-vcenter_usr:              # vCenter username. If user is tied to a domain, then escape the \, example `domain\\user`
-vcenter_pwd:              # vCenter password
-vcenter_data_center:      # vCenter datacenter
+vcenter_host:  vcsa-01.haas-59.pez.pivotal.io           # vCenter host or IP
+vcenter_usr:   env10user@vsphere.local           # vCenter username. If user is tied to a domain, then escape the \, example `domain\\user`
+vcenter_pwd:   eS7XRik1wNju9!           # vCenter password
+vcenter_data_center:   Datacenter   # vCenter datacenter
 
 # Ops Manager VM configuration
 om_vm_host:               # Optional - vCenter host to deploy Ops Manager in
-om_data_store:            # vCenter datastore name to deploy Ops Manager in
-opsman_uri:               # FQDN to access Ops Manager without protocol (will use https), ex: opsmgr.example.com
-opsman_admin_username:    # Username for Ops Manager admin account
-opsman_admin_password:    # Password for Ops Manager admin account
-om_ssh_pwd:               # SSH password for Ops Manager (ssh user is ubuntu)
-om_decryption_pwd:        # Decryption password for Ops Manager exported settings
-om_ntp_servers:           # Comma-separated list of NTP Servers
-om_dns_servers:           # Comma-separated list of DNS Servers
-om_gateway:               # Gateway for Ops Manager network
-om_netmask:               # Netmask for Ops Manager network
-om_ip:                    # IP to assign to Ops Manager VM
-om_vm_network:            # vCenter network name to use to deploy Ops Manager in
-om_vm_name:               # Name to use for Ops Manager VM
+om_data_store:            LUN01 # vCenter datastore name to deploy Ops Manager in
+opsman_uri:               opsmgr-10.haas-59.pez.pivotal.io  # FQDN to access Ops Manager without protocol (will use https), ex: opsmgr.example.com
+opsman_admin_username:    admin # Username for Ops Manager admin account
+opsman_admin_password:    3VJ3pMC9PyTA7eIIWwTcHSt0J  # Password for Ops Manager admin account
+om_ssh_pwd:               3VJ3pMC9PyTA7eIIWwTcHSt0J # SSH password for Ops Manager (ssh user is ubuntu)
+om_decryption_pwd:        3VJ3pMC9PyTA7eIIWwTcHSt0J # Decryption password for Ops Manager exported settings
+om_ntp_servers:           10.193.62.2 # Comma-separated list of NTP Servers
+om_dns_servers:           10.193.62.2 # Comma-separated list of DNS Servers
+om_gateway:               10.193.75.1 # Gateway for Ops Manager network
+om_netmask:               255.255.255.0 # Netmask for Ops Manager network
+om_ip:                    10.193.75.6 # IP to assign to Ops Manager VM
+om_vm_network:            env10  # vCenter network name to use to deploy Ops Manager in
+om_vm_name:               opsmgr_10 # Name to use for Ops Manager VM
 om_disk_type: "thin"      # Disk type for Ops Manager VM (thick|thin)
 om_vm_power_state: true   # Whether to power on Ops Manager VM after creation
 
@@ -32,69 +84,63 @@ om_vm_power_state: true   # Whether to power on Ops Manager VM after creation
 # Possible formats:
 #   cluster:       /<Data Center Name>/host/<Cluster Name>
 #   resource pool: /<Data Center Name>/host/<Cluster Name>/Resources/<Resource Pool Name>
-om_resource_pool:
+om_resource_pool: /Datacenter/host/Cluster/Resources/RP10
 
-ephemeral_storage_names:  # Ephemeral Storage names in vCenter for use by PCF
-persistent_storage_names: # Persistent Storage names in vCenter for use by PCF
+ephemeral_storage_names:  LUN01 # Ephemeral Storage names in vCenter for use by PCF
+persistent_storage_names: LUN01 # Persistent Storage names in vCenter for use by PCF
 
-bosh_vm_folder: "pcf_vms"                 # vSphere datacenter folder (such as pcf_vms) where VMs will be placed
-bosh_template_folder: "pcf_templates"     # vSphere datacenter folder (such as pcf_templates) where templates will be placed
-bosh_disk_path: "pcf_disk"                # vSphere datastore folder (such as pcf_disk) where attached disk images will be created
+bosh_vm_folder: "pcf_vms_env10"                 # vSphere datacenter folder (such as pcf_vms) where VMs will be placed
+bosh_template_folder: "pcf_templates_env10"     # vSphere datacenter folder (such as pcf_templates) where templates will be placed
+bosh_disk_path: "pcf_disk_env10"                # vSphere datastore folder (such as pcf_disk) where attached disk images will be created
 
 trusted_certificates:         # Trusted certificates to be deployed along with all VM's provisioned by BOSH
 vm_disk_type: "thick"         # Disk type for BOSH provisioned VM. (thick|thin)
 
 # AZ configuration for Ops Director
-az_1_name:                    # Logical name of availability zone. No spaces or special characters.
-az_1_cluster_name:            # Name of cluster in vCenter for AZ1
-az_1_rp_name:                 # Resource pool name in vCenter for AZ1
-az_2_name:                    # Logical name of availability zone. No spaces or special characters.
-az_2_cluster_name:            # Name of cluster in vCenter for AZ2
-az_2_rp_name:                 # Resource pool name in vCenter for AZ2
-az_3_name:                    # Logical name of availability zone. No spaces or special characters.
-az_3_cluster_name:            # Name of cluster in vCenter for AZ3
-az_3_rp_name:                 # Resource pool name in vCenter for AZ3
+az_1_name:                    main # Logical name of availability zone. No spaces or special characters.
+az_1_cluster_name:            Cluster # Name of cluster in vCenter for AZ1
+az_1_rp_name:                 RP10 # Resource pool name in vCenter for AZ1
 
-ntp_servers:                  # Comma-separated list of NTP servers to use for VMs deployed by BOSH
-ops_dir_hostname:             # Optional DNS name for Ops Director. Should be reachable from all networks.
+ntp_servers:                  10.193.62.2 # Comma-separated list of NTP servers to use for VMs deployed by BOSH
+ops_dir_hostname:             10.193.62.2 # Optional DNS name for Ops Director. Should be reachable from all networks.
 enable_vm_resurrector: true   # Whether to enable BOSH VM resurrector
 max_threads: 30               # Max threads count for deploying VMs
 
 # Network configuration for Ops Director
-icmp_checks_enabled: true     # Enable or disable ICMP checks
+icmp_checks_enabled: false     # Enable or disable ICMP checks
 
 infra_network_name: "INFRASTRUCTURE"
-infra_vsphere_network:        # vCenter Infrastructure network name
-infra_nw_cidr:                # Infrastructure network CIDR, ex: 10.0.0.0/22
-infra_excluded_range:         # Infrastructure network exclusion range
-infra_nw_dns:                 # Infrastructure network DNS
-infra_nw_gateway:             # Infrastructure network Gateway
-infra_nw_azs:                 # Comma separated list of AZ's to be associated with this network
+infra_vsphere_network:       env10 # vCenter Infrastructure network name
+infra_nw_cidr:               10.193.75.0/24 # Infrastructure network CIDR, ex: 10.0.0.0/22
+infra_excluded_range:        10.193.75.21-10.193.75.255 # Infrastructure network exclusion range
+infra_nw_dns:                10.193.62.2  # Infrastructure network DNS
+infra_nw_gateway:          10.193.75.1 # Infrastructure network Gateway
+infra_nw_azs:           main # Comma separated list of AZ's to be associated with this network
 
 deployment_network_name: "DEPLOYMENT"
-deployment_vsphere_network:   # vCenter Deployment network name
-deployment_nw_cidr:           # Deployment network CIDR, ex: 10.0.0.0/22
-deployment_excluded_range:    # Deployment network exclusion range
-deployment_nw_dns:            # Deployment network DNS
-deployment_nw_gateway:        # Deployment network Gateway
-deployment_nw_azs:            # Comma separated list of AZ's to be associated with this network
+deployment_vsphere_network:   env10 # vCenter Deployment network name
+deployment_nw_cidr:           10.193.75.0/24 # Deployment network CIDR, ex: 10.0.0.0/22
+deployment_excluded_range:    10.193.75.0-10.193.75.20, 10.193.75.141-10.193.75.255 # Deployment network exclusion range
+deployment_nw_dns:            10.193.62.2  # Deployment network DNS
+deployment_nw_gateway:        10.193.75.1 # Deployment network Gateway
+deployment_nw_azs:            main # Comma separated list of AZ's to be associated with this network
 
 services_network_name: "SERVICES"
-is_service_network:           # Required select service network option in Ops man true or false
-services_vsphere_network:     # vCenter Services network name
-services_nw_cidr:             # Services network CIDR, ex: 10.0.0.0/22
-services_excluded_range:      # Services network exclusion range
-services_nw_dns:              # Services network DNS
-services_nw_gateway:          # Services network Gateway
-services_nw_azs:              # Comma separated list of AZ's to be associated with this network
+is_service_network:           true # Required select service network option in Ops man true or false
+services_vsphere_network:     env10 # vCenter Services network name
+services_nw_cidr:             10.193.75.0/24 # Services network CIDR, ex: 10.0.0.0/22
+services_excluded_range:      10.193.75.0-10.193.75.140,10.193.75.201-10.193.75.255 # Services network exclusion range
+services_nw_dns:              10.193.62.2 # Services network DNS
+services_nw_gateway:          10.193.75.1   # Services network Gateway
+services_nw_azs:              main # Comma separated list of AZ's to be associated with this network
 
 dynamic_services_network_name: "DYNAMIC-SERVICES"
-dynamic_services_vsphere_network:     # vCenter Dynamic Services network name
-dynamic_services_nw_cidr:             # Dynamic Services network CIDR, ex: 10.0.0.0/22
-dynamic_services_excluded_range:      # Dynamic Services network exclusion range
-dynamic_services_nw_dns:              # Dynamic Services network DNS
-dynamic_services_nw_gateway:          # Dynamic Services network Gateway
-dynamic_services_nw_azs:              # Comma separated list of AZ's to be associated with this network
+dynamic_services_vsphere_network:     env10 # vCenter Dynamic Services network name
+dynamic_services_nw_cidr:             10.193.75.0/24 # Dynamic Services network CIDR, ex: 10.0.0.0/22
+dynamic_services_excluded_range:      10.193.75.0-10.193.75.200, 10.193.75.250-10.193.75.255 # Dynamic Services network exclusion range
+dynamic_services_nw_dns:              10.193.62.2  # Dynamic Services network DNS
+dynamic_services_nw_gateway:          10.193.75.1 # Dynamic Services network Gateway
+dynamic_services_nw_azs:              main # Comma separated list of AZ's to be associated with this network
 
 ert_singleton_job_az:         # AZ to use for deployment of ERT Singleton jobs
 ert_errands_to_disable:       # Comma-separated list of errand names to disable before deploy
@@ -153,10 +199,10 @@ first_name_attribute:
 last_name_attribute:
 
 ## Deployment domain names
-system_domain:
-apps_domain:
+system_domain:   "*.run-10.haas-59.pez.pivotal.io"
+apps_domain:  "*.cfapps-10.haas-59.pez.pivotal.io"
 
-skip_cert_verify: false       # If true, disable SSL certificate verification for this environment.
+skip_cert_verify: true       # If true, disable SSL certificate verification for this environment.
 
 disable_insecure_cookies: false # If true, disable insecure cookies on the router.
 
@@ -171,7 +217,7 @@ router_static_ips:      # Comma-separated list of static IPs
 tcp_router_static_ips:  # Comma-separated list of static IPs
 ssh_static_ips:         # Comma-separated list of static IPs
 
-mysql_monitor_email:    # Email address to receive MySQL monitor notifications
+mysql_monitor_email:   mma@pivotal.io # Email address to receive MySQL monitor notifications
 mysql_backups: disable   # Whether to enable MySQL backups. (disable|s3|scp)
 
 #SCP backup config params (leave empty values if you're not using scp)
