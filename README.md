@@ -41,6 +41,12 @@ fly -t yourtarget set-pipeline \
   --load-vars-from upgrade-ops-manager/aws/params.yml
 ```
 
+## Install a new PCF in PEZ HaaS environment
+
+This is a customized version for PEZ Haas environment with pre-defined environment parameters.
+The origin version of vSphere installation task was designed for a deployment with 3 Clusters and 3 AZs.
+I have modified the vSphere installation script so it is now deploying only 1 Cluster and 1 AZ.
+
 ## Upgrading/Extending
 
 It's possible to modify `pcf-pipelines` to suit your particular needs using

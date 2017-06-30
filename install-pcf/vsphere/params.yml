@@ -102,7 +102,7 @@ az_1_cluster_name:            Cluster # Name of cluster in vCenter for AZ1
 az_1_rp_name:                 RP10 # Resource pool name in vCenter for AZ1
 
 ntp_servers:                  10.193.62.2 # Comma-separated list of NTP servers to use for VMs deployed by BOSH
-ops_dir_hostname:             10.193.62.2 # Optional DNS name for Ops Director. Should be reachable from all networks.
+ops_dir_hostname:             opsmgr-10.haas-59.pez.pivotal.io # Optional DNS name for Ops Director. Should be reachable from all networks.
 enable_vm_resurrector: true   # Whether to enable BOSH VM resurrector
 max_threads: 30               # Max threads count for deploying VMs
 
